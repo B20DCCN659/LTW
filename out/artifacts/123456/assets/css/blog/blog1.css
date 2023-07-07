@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+}
+
+.float-right
+{
+    float: right;
+}
+/* HEADER */
+.header {
+    max-width: 100%;
+    min-height: 50px;
+    background-color: rgb(242, 255, 243);
+    color: rgb(51, 51, 51);
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.hd-one {
+    padding-left: 0;
+    margin: 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.hd-two {
+    list-style: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 0 10px;
+    position: relative;
+}
+
+.hd-two ul.sub-menu {
+    position: absolute;
+    background-color: rgb(242, 255, 243);
+    padding: 15px 0;
+    list-style: none;
+    min-width: 150px;
+    border-radius: 8px;
+    /* margin-top: 10px; */
+    border-top: 8px solid rgb(51, 51, 51);
+    border-bottom: 8px solid rgb(51, 51, 51);
+    display: none;
+}
+
+.hd-one li:hover ul.sub-menu {
+    display: block;
+}
+.hd-two ul.sub-menu li {
+    height: 30px;
+    border-bottom: 1px solid rgb(51, 51, 51);
+}
+.hd-two ul.sub-menu a {
+    color: rgb(51, 51, 51);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hd-two ul.sub-menu li:hover a{
+    color: rgb(198, 186, 186);
+}
+.hd-two ul.sub-menu li:last-child {
+    border-bottom: none;
+}
+
+.hd-one>li>a::before{
+    position: relative;
+}
+.hd-one>li>a::before {
+    content: "";
+    height: 4px;
+    width: 0px;
+    background: red;
+    position: absolute;
+    bottom: -10px;
+    left: 0px;
+    transition: 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.hd-one>li:hover>a::before {
+    width: 100%;
+}
+
+.hd-one>li.has-child::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f107";
+    color: rgb(51, 51, 51);
+}
+
+#pen::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    content: "\f304";
+    color: rgb(51, 51, 51);
+    margin-right: 2px;
+}
+
+#exit::before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    content: "\f2f5";
+    color: rgb(51, 51, 51);
+    margin-left: 2px;
+}
+
+/* MAIN */
+.main {
+    max-width: 100%;
+    min-height: 1000px;
+    box-sizing: border-box;
+    background-color: #EAEFF3;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+/* CONTENT */
+.content {
+    width: 70%;
+    padding: 40px;
+    margin-top: 8px;
+    box-sizing: border-box;
+    float: left;
+    background-color: white;
+    border: 1px solid #EAEFF3;
+    border-radius: 8px;
+}
+
+.content>p {
+    font-size: large;
+}
+
+/* SIDEBAR */
+
+/* SIDEBAR-ONE */
+.sidebar {
+    width: 17%;
+    float: left;
+    margin: 0 10px;
+    box-sizing: border-box;
+    background-color: #EAEFF3;
+}
+
+.sidebar-one {
+    width: 100%;
+    min-height: 50px;
+    padding: 8px 8px;
+    margin: 8px 0;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid #EAEFF3;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+
+.sidebar-two {
+    margin-top: 9px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #EAEFF3;
+    border-radius: 8px;
+}
+
+/* SIDEBAR-TWO */
+.comments {
+    margin-top: 20px;
+}
+
+.comment {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.author {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.text {
+    white-space: pre-line;
+}
+
+.comment-form {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.comment-form label, .comment-form input, .comment-form textarea, .comment-form button {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.comment-form label {
+    font-weight: bold;
+}
+
+.comment-form input, .comment-form textarea {
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.comment-form button {
+    padding: 5px 10px;
+    background-color: #4285f4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* FOOTER */
+.footer {
+    width: 100%;
+    min-height: 100px;
+    background-color: #EAEFF3;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-form {
+    width: calc(82% + 91px);
+    height: 100px;
+    background-color: white;
+    border: 1px solid #EAEFF3;
+    border-radius: 8px;
+    margin-top: 8px;
+}

@@ -1,0 +1,152 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main{
+    background: url('background.jpg')no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.display__flex{
+    display: flex !important;
+}
+
+.header{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 10vh;
+    background: transparent;
+}
+
+.header__navbar--main{
+    color: #fff;
+    font-size: 2em;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.header__navbar--main:hover{
+    color: rgba(255,255,255,0.5);
+}
+
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    width: 100%;
+}
+.form-box{
+    position: relative;
+    width: 400px;
+    height: auto;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+h2{
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.message{
+    position: relative;
+    background-color: #afc0cb;
+    width: 350px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 16px 0;
+    display: none;
+}
+.message-title-2,
+.message-title{
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+}
+.inputbox{
+    position: relative;
+    margin: 28px 0 12px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+    font-weight: 600;
+}
+input:focus ~ label,
+input:valid ~ label{
+    top: -5px;
+}
+
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding:0 35px 0 5px;
+    color: #fff;
+}
+button{
+    margin: 10px 0;
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+.register{
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+    padding-bottom: 10px;
+}
+.register p a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+.register p a:hover{
+    text-decoration: underline;
+    color: rgba(255,255,255,0.8);
+}
+
+.alert{
+    background-color: brown;
+}
+
+.notice{
+    background-color: rgb(113, 180, 197);
+}
+
+input[type="password"]:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}

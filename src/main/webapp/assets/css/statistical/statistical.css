@@ -1,0 +1,199 @@
+:root {
+    --while-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+
+}
+
+body {
+    background-color: #333126c4;
+    margin: 0;
+}
+
+.web {
+    position: relative;
+    /* height: 1500px; */
+}
+
+a {
+    text-decoration: none;
+}
+
+/* start tieu de */
+
+
+#tieude {
+    height: 60px;
+    width: 100%;
+    background-color: #080707;
+    font-size: 10px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+.tieude__nut1 {
+    display: flex;
+    margin-top: 10px;
+}
+
+.tieude__nut {
+    display: flex;
+}
+
+
+.tieude__nut {
+    font-size: 17px;
+    margin-top: 10px;
+}
+.tieude__link{
+    margin-top: 18px;
+    font-size: 20px;
+    font-weight: 1000;
+}
+
+.tieude__link a {
+    margin-left: 20px;
+    color: #9e82ef;
+    font-size: larger;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.tieude__nut a {
+    margin-right: 25px;
+    font-weight: 300;
+    color: white;
+    font-size: 18px;
+}
+
+.tieude__nut a{
+    padding: 12px 5px;
+}
+
+.tieude__link a:hover{
+    background-color: #e9ebe4;
+    color: #000;
+}
+.tieude__nut1 a:hover {
+    background-color: #625e70;
+    border-radius: 15px;
+}
+
+
+/* anh */
+
+.avatar_anh {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin-right: 20px;
+    position: relative;
+
+}
+
+.avatar_menu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    top: 57px;
+    right: 25px;
+}
+
+.avatar_menu li {
+    list-style-type: none;
+    padding: 10px 0 05px 15px;
+}
+
+.avatar_menu li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.avatar_menu li:hover {
+    background-color: #ddd;
+}
+
+.avatar_icon {
+    margin-right: 15px;
+}
+
+/* end anh */
+
+
+/* end tieu de */
+
+
+
+
+/* start truyen moi nhat */
+
+#noidung{
+
+    width: 90%;
+    margin: 20px auto 10px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.truyen__moinhat {
+    margin: 60px 25px 0 5px;
+    border: 1px solid #f1f0f0;
+    width: 40%;
+    align-self: flex-start;
+    color: var(--while-color);
+    background-color: #393e3d;
+
+}
+
+.truyen__tieuDe {
+    padding: 0 60px;
+}
+
+.truyen__moinhat-ds {
+    padding: 0;
+}
+
+.truyen__moinhat-ds li {
+    border-top: 1px solid #000;
+    list-style: none;
+    padding: 0 10px;
+
+}
+
+.truyen__moinhat-ds li .truyen__icon {
+    color: var(--while-color);
+}
+
+.truyen__moinhat .truyen__tieuDe {
+    padding: 0 10px;
+}
+
+.deMuc{
+    display: flex;
+    justify-content: space-between;
+}
+
+.phanTu i {
+    float: right;
+    color: #f6f6f6;
+    font-size: 14px;
+}
+
+
+.soluong {
+    float: right;
+    color: #f6f6f6;
+    margin-right: 10px;
+}
+
+/* end truyen moi nhat */
+
